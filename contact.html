@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="id.css" />
+    <script src="form.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <div class="headerflex">
+          <div><a href="contact.html"></a></div>
+          <img src="nike.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <header>
+      <div id="page-logo">
+        <a href="index.html"><img style="width: 70px; padding: 8px 30px;" src="logo (2).png" alt="" /></a>
+      </div>
+      <nav>
+        <div class="headerflex">
+          <div><a href="blog.html">BLOG</a></div>
+          <div><a href="">GALLERIES</a></div>
+          <div><a href="" target="blank">ABOUT</a></div>
+          <div><a href="contact.html">CONTACT ME</a></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <section>
+          <h1>CONTACT FORM</h1>
+          <ul>
+            <li>
+              <label for="input-name">Name</label>
+              <input id="input-name" type="text" />
+            </li>
+            <li>
+              <label for="input-email">Email</label>
+              <input id="input-email" type="email" class="email" />
+            </li>
+            <li>
+              <label for="input-phone">Phone Number</label>
+              <input id="input-phone" type="number" />
+              
+            </li>
+            <li>
+              <label for="input-message">Your Message</label>
+              <textarea id="input-message"></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="input-subject">How did you find us?</label>
+          <div style="display: flex; padding: 10px;" name="subject" id="input-subject">
+            <label for="web">Website</label>
+            <input type="checkbox" id="web" value="web">
+            
+            <label for="mouth">Social Media</label>
+            <input type="checkbox" id="mouth" value="Social Media">
+            
+            <!-- <option id="web">Web search</option>
+            <option id="mouth">Mouth to mouth</option> -->
+          </div>
+          <!-- <div>
+            <input type="checkbox" id="web" value="web">
+            <label for="web">web</label>
+
+            <input type="checkbox" id="mouth" value="mouth">
+            <label for="mouth">mouth</label>
+        </div> -->
+        </section>
+
+        <section id="form-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="button" class="btn-filled" onclick="submitData()">
+            Submit
+          </button>
+        </section>
+      </form>
+      <!-- <form>
+
+        <div>        
+            <label for="input-name" >Name</label>
+            <input id="input-name" type="text">
+        </div>
+
+        <div>
+            <label for="input-email">Email</label>
+            <input id="input-email" type="email" class="email">
+        </div>
+
+        <div>
+            <label for="input-phone">Phone Number</label>
+            <input id="input-phone" type="number" >
+        </div>
+
+        <div>
+            <div>
+                <input type="checkbox" id="html" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" value="CSS">
+                <label for="css">CSS</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject">
+                <option value="">Select Here</option>
+                <option>I'm Hiring</option>
+                <option>Problem With Our Site</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="input-message">Your Message</label>
+            <textarea id="input-message"></textarea>
+        </div>
+
+        <button type="button" onclick="submitData()">Submit</button>
+    </form> -->
+    </main>
+  </body>
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/?hl=id"
+          ><img src="iconmonstr-instagram-11-240.png" alt="instagram"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/"
+          ><img src="iconmonstr-facebook-1-240.png" alt="facebook"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/"
+          ><img src="iconmonstr-twitter-1-240.png" alt="facebook"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/"
+          ><img src="iconmonstr-youtube-6-240.png" alt="facebook"
+        /></a>
+      </li>
+    </ul>
+  </footer>
+</html>

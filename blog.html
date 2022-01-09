@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="id.css" />
+    <script src="blog.js" defer></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="top">
+        <nav>
+          <div class="headerflex">
+            <div><a href="contact.html"></a></div>
+            <img src="nike.png" alt="" />
+          </div>
+        </nav>
+      </header>
+  
+      <header>
+        <div id="page-logo">
+          <a href="index.html"><img style="width: 70px; padding: 8px 30px;" src="logo (2).png" alt="" /></a>
+        </div>
+        <nav>
+          <div class="headerflex">
+            <div><a href="blog.html">BLOG</a></div>
+            <div><a href="">GALLERIES</a></div>
+            <div><a href="" target="blank">ABOUT</a></div>
+            <div><a href="contact.html">CONTACT ME</a></div>
+          </div>
+        </nav>
+      </header>
+    <main style="display: block;">
+        <div class="blog">
+            <div class="blog-form">
+              <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                  <h1>Create Post Blog</h1>
+                  <div>
+                    <label for="input-blog-title">Title</label>
+                    <input id="input-blog-title" />
+                  </div>
+                  <div>
+                    <label for="input-blog-content">Content</label>
+                    <textarea id="input-blog-content"></textarea>
+                  </div>
+                  <div>
+                    <label>Upload Image</label>
+                    <div class="input-blog-image-group">
+                      <label for="input-blog-image">
+                        <!-- <p></p> -->
+                        <img style="width: 20px; padding: 20px;" src="attach.png" alt="file" />
+                      </label>
+                      <input type="file" id="input-blog-image" hidden />
+                    </div>
+                  </div>
+                  <div class="button-group">
+                    <button>Post Blog</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr class="line" />
+            <div id="contents" class="blog-list">
+              <!-- dynamic content would be here -->
+              <div class="blog-list-item">
+                <div class="blog-image">
+                  <img src="news.png" alt="news" />
+                </div>
+                <div class="blog-content">
+                  <div class="btn-group">
+                    <button class="btn-edit">Edit Post</button>
+                    <button class="btn-post">Post Blog</button>
+                  </div>
+                  <h1>
+                    <a href="blog-detail.html" target="_blank"
+                      >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
+                    >
+                  </h1>
+                  <div class="detail-blog-content">
+                    12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+                  </div>
+                  <p>
+                    Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+                    menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+                    ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+                    meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Quam, molestiae
+                    numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+                    eligendi debitis?
+                  </p>
+      
+                  <div style="text-align: right;">
+                      <span style="font-size: 13px; color: grey">
+                        1 day ago
+                      </span>
+                  </div>
+      
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </body>
+      
+    </main>
+  </body>
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/?hl=id"
+          ><img src="iconmonstr-instagram-11-240.png" alt="instagram"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/"
+          ><img src="iconmonstr-facebook-1-240.png" alt="facebook"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/"
+          ><img src="iconmonstr-twitter-1-240.png" alt="facebook"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/"
+          ><img src="iconmonstr-youtube-6-240.png" alt="facebook"
+        /></a>
+      </li>
+    </ul>
+  </footer>
+</html>
