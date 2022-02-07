@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="id.css" />
+    <link rel="stylesheet" href="gallery.css">
+    <!-- <link rel="stylesheet" href="places.css"> -->
+    
+    
     <script src="blog.js" defer></script>
     
     <link
@@ -19,8 +23,9 @@
     <header id="top">
         <nav>
           <div class="headerflex">
-            <div><a href="contact.html"></a></div>
-            <img src="nike.png" alt="" />
+            <div ><a href="contact.html"></a></div>
+            
+            <img src="" alt="" />
           </div>
         </nav>
       </header>
@@ -40,7 +45,7 @@
       </header>
     <main style="display: block;">
         <div class="blog">
-            <div class="blog-form">
+            <!-- <div class="blog-form">
               <div class="form-container">
                 <form onsubmit="addBlog(event)">
                   <h1>Create Post Blog</h1>
@@ -52,6 +57,192 @@
                     <label for="input-blog-content">Content</label>
                     <textarea id="input-blog-content"></textarea>
                   </div>
+                  <div>
+                    <label>Upload Image</label>
+                    <div class="input-blog-image-group">
+                      <label for="input-blog-image">
+                      
+                        <img style="width: 20px; padding: 20px;" src="attach.png" alt="file" />
+                      </label>
+                      <input type="file" id="input-blog-image" hidden />
+                    </div>
+                  </div>
+                  <div class="button-group">
+                    <button>Post Blog</button>
+                  </div>
+                </form>
+              </div>
+            </div> -->
+            
+            <!-- <ul >
+              <li class="blog-list-item">
+                <img class="blog-image" src="news.jpg" alt="City of Barcelona" />
+                <div class="blog-content">
+                  <div class="item-content">
+                    <div>
+                      <h2>News 1</h2>
+                      <div style="font-size: 11px;" class="detail-blog-content">
+                        12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        vitae incidunt eos atque dicta natus quam accusantium placeat.
+                      </p>
+                    </div>
+                    <div class="actions">
+                      <div class="btn-group">
+                        <button class="btn-edit">Edit Post</button>
+                        <button class="btn-post">Post Blog</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </li>
+              <li class="blog-list-item">
+                <img class="blog-image" src="news.jpg" alt="City of Barcelona" />
+                <div class="blog-content">
+                  <div class="item-content">
+                    <div>
+                      <h2>News 1</h2>
+                      <div style="font-size: 11px;" class="detail-blog-content">
+                        12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        vitae incidunt eos atque dicta natus quam accusantium placeat.
+                      </p>
+                    </div>
+                    <div class="actions">
+                      <div class="btn-group">
+                        <button class="btn-edit">Edit Post</button>
+                        <button class="btn-post">Post Blog</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </li>
+              
+            </ul> -->
+            
+            <div id="contents" class="blog-list">
+              
+              <!-- dynamic content would be here -->
+              <ul class="blog-list-item">
+                <li>
+                  <div class="blog-image">
+                    <img src="news.jpg" alt="City of Barcelona" />
+                  </div>
+                  
+                  <div class="item-content">
+                    <div>
+                      <h2>News 1</h2>
+                      <div class="detail-blog-content">
+                        12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        vitae incidunt eos atque dicta natus quam accusantium placeat.
+                      </p>
+                    </div>
+                    <div class="actions">
+                      <div class="btn-group">
+                        <button class="btn-edit">Edit Post</button>
+                        <button class="btn-post">Post Blog</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="blog-image">
+                    <img src="news.jpg" alt="City of Barcelona" />
+                  </div>
+                  <!-- <img src="news.jpg" alt="Hawaii beach" /> -->
+                  <div class="item-content">
+                    <div>
+                      <h2>News 2</h2>
+                      <div class="detail-blog-content">
+                        12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        vitae incidunt eos atque dicta natus quam accusantium placeat.
+                      </p>
+                    </div>
+                    <div class="actions">
+                      <div class="btn-group">
+                        <button class="btn-edit">Edit Post</button>
+                        <button class="btn-post">Post Blog</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+                <!-- <div class="blog-list-item">
+                  <div class="blog-image">
+                    <img src="news.png" alt="news" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="btn-group">
+                      <button class="btn-edit">Edit Post</button>
+                      <button class="btn-post">Post Blog</button>
+                    </div>
+                    <h1>
+                      <a href="blog-detail.html" target="_blank"
+                        >Fact check: How do I spot fake news?</a
+                      >
+                    </h1>
+                    <div class="detail-blog-content">
+                      12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+                    </div>
+                    <p>
+                      In April, a screenshot of a quote from Annalena Baerbock circulated on Facebook. In it, the German Green Party leader and then-candidate for chancellor supposedly called for an end to private pet ownership because pets would consume too much CO2.
+                      In Brazil in 2018, also during an election campaign, millions of messages were sent via WhatsApp in favor of the right-wing populist president, Jair Bolsonaro. Among other things, these messages suggested that the left-wing Workers' Party (PT) was planning a communist dictatorship or wanted to legalize pedophilia.
+                    </p>
+        
+                    <div style="text-align: right;">
+                        <span style="font-size: 13px; color: grey">
+                          1 day ago
+                        </span>
+                    </div>
+        
+                  </div>
+                </div> -->
+              
+            </div>
+          </div>
+
+          <hr class="line" />
+
+          <div class="blog-form">
+              <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                  <h1>Create Post Blog</h1>
+                  <div>
+                    <label for="input-blog-title">Title</label>
+                    <input id="input-blog-title" />
+                  </div>
+                  <div>
+                    <label for="input-blog-content">Content</label>
+                    <textarea id="input-blog-content"></textarea>
+                  </div>
+                  <section>
+                    <label for="input-subject">News Categories ?</label>
+                    <div style="display: flex; padding: 10px;" name="subject" id="input-subject">
+                      <label for="web">Sport</label>
+                      <input type="checkbox" id="web" value="web">
+                      
+                      <label for="mouth">Technology</label>
+                      <input type="checkbox" id="mouth" value="Social Media">
+                      
+                      
+                    </div>
+                    
+                  </section>
                   <div>
                     <label>Upload Image</label>
                     <div class="input-blog-image-group">
@@ -68,49 +259,8 @@
                 </form>
               </div>
             </div>
-            <hr class="line" />
-            <div id="contents" class="blog-list">
-              <!-- dynamic content would be here -->
-              <div class="blog-list-item">
-                <div class="blog-image">
-                  <img src="news.png" alt="news" />
-                </div>
-                <div class="blog-content">
-                  <div class="btn-group">
-                    <button class="btn-edit">Edit Post</button>
-                    <button class="btn-post">Post Blog</button>
-                  </div>
-                  <h1>
-                    <a href="blog-detail.html" target="_blank"
-                      >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
-                    >
-                  </h1>
-                  <div class="detail-blog-content">
-                    12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
-                  </div>
-                  <p>
-                    Ketimpangan sumber daya manusia (SDM) di sektor digital masih
-                    menjadi isu yang belum terpecahkan. Berdasarkan penelitian
-                    ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
-                    meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Quam, molestiae
-                    numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
-                    eligendi debitis?
-                  </p>
-      
-                  <div style="text-align: right;">
-                      <span style="font-size: 13px; color: grey">
-                        1 day ago
-                      </span>
-                  </div>
-      
-                </div>
-              </div>
-              
-            </div>
-          </div>
           
-        </body>
+        <!-- </body> -->
       
     </main>
   </body>

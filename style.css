@@ -251,7 +251,7 @@ footer img {
   }
   
   /* Blog list */
-  .blog .blog-list {
+  /* .blog .blog-list {
     margin-top: 80px;
     margin-bottom: 80px;
     display: flex;
@@ -322,7 +322,7 @@ footer img {
   }
   
   /* Blog Detail */
-  .blog-detail {
+  /* .blog-detail {
     display: flex;
     justify-content: center;
   }
@@ -407,7 +407,7 @@ footer img {
   .skill-container div img {
       width: 50px;
       height: 50px;
-  }
+  } */ */
   
   form {
       width: 400px; 

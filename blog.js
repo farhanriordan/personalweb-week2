@@ -25,93 +25,194 @@ function addBlog(event) {
   renderBlog();
 }
 
-// DOM
 function renderBlog() {
-  let contentContainer = document.getElementById("contents");
-
-  contentContainer.innerHTML = firstBlogContent();
+  document.getElementById("contents").innerHTML = firstBlogContent();
 
   for (let i = 0; i < blogs.length; i++) {
-    contentContainer.innerHTML += `<div class="blog-list-item">
-        <div class="blog-image">
-          <img src="${blogs[i].image}" alt="" />
-        </div>
-        <div class="blog-content">
-          <div class="btn-group">
-            <button class="btn-edit">Edit Post</button>
-            <button class="btn-post">Post Blog</button>
-          </div>
-          <h1>
-            <a href="blog-detail.html" target="_blank"
-              >${blogs[i].title}</a
-            >
-          </h1>
-          <div class="detail-blog-content">
+    document.getElementById(
+      "contents"
+    ).innerHTML += `<ul>
+  <li class="blog-list-item">
+    <img src="${blogs[i].image}" alt="" />
+    <div class="blog-content">
+      <div class="item-content">
+        <div>
+          <h2>
+            <a href="blog-detail.html" target="_blank">
+              ${blogs[i].title}
+            </a>
+          </h2>
+          <div style="font-size: 11px;" class="detail-blog-content">
             ${getFullTime(blogs[i].postAt)} | ${blogs[i].author}
           </div>
           <p>
             ${blogs[i].content}
           </p>
-
           <div style="text-align: right;">
             <span style="font-size: 13px; color: grey">
             ${getDistanceTime(blogs[i].postAt)}
             </span>
           </div>
-
         </div>
-      </div>`;
+        <div class="actions">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Post Blog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>`
   }
 }
 
+
+
+
+{/* <ul>
+  <li class="blog-list-item">
+    <img src="${blogs[i].image}" alt="" />
+    <div class="blog-content">
+      <div class="item-content">
+        <div>
+          <h2>
+            <a href="blog-detail.html" target="_blank">
+              ${blogs[i].title}
+            </a>
+          </h2>
+          <div style="font-size: 11px;" class="detail-blog-content">
+            ${getFullTime(blogs[i].postAt)} | ${blogs[i].author}
+          </div>
+          <p>
+            ${blogs[i].content}
+          </p>
+          <div style="text-align: right;">
+            <span style="font-size: 13px; color: grey">
+            ${getDistanceTime(blogs[i].postAt)}
+            </span>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Post Blog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="blog-list-item">
+    <img class="blog-image" src="news.jpg" alt="City of Barcelona" />
+    <div class="blog-content">
+      <div class="item-content">
+        <div>
+          <h2>News 1</h2>
+          <div style="font-size: 11px;" class="detail-blog-content">
+            12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            vitae incidunt eos atque dicta natus quam accusantium placeat.
+          </p>
+        </div>
+        <div class="actions">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Post Blog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>; */}
+
 function firstBlogContent() {
-  return `<div class="blog-list-item">
-  <div class="blog-image">
-    <img src="news.png" alt="" />
-  </div>
-  <div class="blog-content">
-    <div class="btn-group">
-      <button class="btn-edit">Edit Post</button>
-      <button class="btn-post">Post Blog</button>
+  return `<ul>
+  <li class="blog-list-item">
+    <img class="blog-image" src="news.jpg" alt="City of Barcelona" />
+    <div class="blog-content">
+      <div class="item-content">
+        <div>
+          <h2>News 1</h2>
+          <div style="font-size: 11px;" class="detail-blog-content">
+            12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            vitae incidunt eos atque dicta natus quam accusantium placeat.
+          </p>
+        </div>
+        <div class="actions">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Post Blog</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1>
-      <a href="blog-detail.html" target="_blank"
-        >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
-      >
-    </h1>
-    <div class="detail-blog-content">
-      12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+    
+  </li>
+  <li class="blog-list-item">
+    <img class="blog-image" src="news.jpg" alt="City of Barcelona" />
+    <div class="blog-content">
+      <div class="item-content">
+        <div>
+          <h2>News 1</h2>
+          <div style="font-size: 11px;" class="detail-blog-content">
+            12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            vitae incidunt eos atque dicta natus quam accusantium placeat.
+          </p>
+        </div>
+        <div class="actions">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Post Blog</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>
-      Ketimpangan sumber daya manusia (SDM) di sektor digital masih
-      menjadi isu yang belum terpecahkan. Berdasarkan penelitian
-      ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
-      meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
-      dolor sit amet consectetur adipisicing elit. Quam, molestiae
-      numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
-      eligendi debitis?
-    </p>
-
-    <div style="text-align: right;">
-        <span style="font-size: 13px; color: grey">
-          1 day ago
-        </span>
-    </div>
-
-  </div>
-</div>`;
+    
+  </li>
+  
+</ul>`;
 }
 
-// let waktu = new Date()
+// function firstBlogContent() {
+//   return `<div class="blog-list-item">
+//   <div class="blog-image">
+//     <img src="news.png" alt="" />
+//   </div>
+//   <div class="blog-content">
+//     <div class="btn-group">
+//       <button class="btn-edit">Edit Post</button>
+//       <button class="btn-post">Post Blog</button>
+//     </div>
+//     <h1>
+//       <a href="blog-detail.html" target="_blank"
+//         >Fact check: How do I spot fake news?</a
+//       >
+//     </h1>
+//     <div class="detail-blog-content">
+//       12 Jul 2021 22:30 WIB | Peter Parker
+//     </div>
+//     <p>
+//     In April, a screenshot of a quote from Annalena Baerbock circulated on Facebook. In it, the German Green Party leader and then-candidate for chancellor supposedly called for an end to private pet ownership because pets would consume too much CO2.
+//     In Brazil in 2018, also during an election campaign, millions of messages were sent via WhatsApp in favor of the right-wing populist president, Jair Bolsonaro. Among other things, these messages suggested that the left-wing Workers' Party (PT) was planning a communist dictatorship or wanted to legalize pedophilia.
+//     </p>
 
-console.log(new Date());
+//     <div style="text-align: right;">
+//         <span style="font-size: 13px; color: grey">
+//           1 day ago
+//         </span>
+//     </div>
 
-console.log(new Date().getDate()); 
-console.log(new Date().getMonth()); 
-console.log(new Date().getFullYear()); 
-
-console.log(new Date().getHours()); 
-console.log(new Date().getMinutes()); 
+//   </div>
+// </div>`;
+// }
 
 let month = [
   "January",
@@ -129,45 +230,37 @@ let month = [
 ];
 
 function getFullTime(time) {
-  let date = time.getDate();
-  let monthIndex = time.getMonth();
-  let year = time.getFullYear();
+  let fullTime = `${time.getDate()} ${
+    month[time.getMonth()]
+  } ${time.getFullYear()} ${time.getHours()}:${time.getMinutes()} WIB`;
 
-  let hours = time.getHours();
-  let minutes = time.getMinutes();
+  console.log(fullTime);
 
-  let fullTime = `${date} ${month[monthIndex]} ${year} ${hours}:${minutes} WIB`;
-  console.log(fullTime)
-  return fullTime;
+  return `${time.getDate()} ${
+    month[time.getMonth()]
+  } ${time.getFullYear()} ${time.getHours()}:${time.getMinutes()} WIB`;
 }
 
 function getDistanceTime(time) {
-  let timePost = time;
-  let timeNow = new Date();
+  let distance = new Date() - time;
 
-  let distance = timeNow - timePost; // perhitungan menghasilkan milisecond, (untuk mendapatkan hari, jam, menit, detik, kita lakukan convert dibwah)
+  let milisecond = 1000;
+  let secondsInHours = 3600;
+  let hoursInDay = 23;
 
-  //  convert milisecond
-  let milisecond = 1000; // seribu dalam 1 detik
-  let secondsInHours = 3600; // dalam 1 jam 3600 detik
-  let hoursInDay = 23; // dalam 1 hari 23 jam
+  let seconds = 60;
+  let minutes = 60;
 
-  let seconds = 60; // detik
-  let minutes = 60; // menit
+  let distanceDay = distance / (milisecond * secondsInHours * hoursInDay);
+  let distanceHours = Math.floor(distance / (milisecond * seconds * minutes));
+  let distanceMinutes = Math.floor(distance / (milisecond * seconds));
+  let distanceSecond = Math.floor(distance / milisecond);
 
-  let distanceDay = distance / (milisecond * secondsInHours * hoursInDay); // perhitungan untuk mendapatkan hari
-  let distanceHours = Math.floor(distance / (milisecond * seconds * minutes)); // perhitungan untuk mendapatkan jam
-  let distanceMinutes = Math.floor(distance / (milisecond * seconds)); // perhitungan untuk mendapatkan menit
-  let distanceSecond = Math.floor(distance / milisecond); // perhitungan untuk mendapatkan detik
-
-  // kondisi menampilkan hari
   if (distanceDay >= 1) {
     return `${distanceDay} day ago`;
   } else if (distanceHours >= 1) {
-    // kondisi menampilkan jam
     return `${distanceHours} hours ago`;
   } else if (distanceMinutes >= 1) {
-    // kondisi menampilkan menit
     return `${distanceMinutes} minutes ago`;
   } else {
     return `${distanceSecond} seconds ago`;
@@ -177,4 +270,4 @@ function getDistanceTime(time) {
 setInterval(() => {
   // console.log('render');
   renderBlog();
-}, 500);
+}, 1000);
